@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --main-hue: 300;
+  --base-saturation: 50%;
+  --base-lightness: 20%;
+  --main-color: hsl(var(--main-hue), 10%, 90%);
+  --dark-gray: hsl(var(--main-hue), 10%, 10%);
+  --big-font: 3rem;
+  --medium-font: 1.5rem;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+header {
+  box-sizing: border-box;
+}
+.cta, nav {
+  padding: 1em;
+}
+.cta {
+  background-color: green;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: blue;
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  max-width: 3em;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.menu_icon {
+  z-index: 100;
+  /* position: fixed;
+  top: -9px;
+  right: -8px; */
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray .4s stroke-dashoffset .4s;
+  stroke: var(--main-color);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.top {
+  stroke-dasharray: 40 160;
+}
+.middle {
+  stroke-dasharray: 40 142;
+}
+.middle, .bottom {
+  transform-origin: 50%;
+}
+.bottom {
+  stroke-dasharray: 40 85;
+}
+.dark-line {
+  stroke: #000;
+}
+.menu_icon.active {
+  transform: rotate(45deg);
+  transition: transform .4s;
+}
+.active .top {
+  stroke-dashoffset: -64px;
+}
+.active .middle {
+  transform: rotate(90deg);
+}
+.active .bottom {
+  stroke-dashoffset: -64px ;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(110, 5%, 95%);
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: visibility .25s, opacity .2s;
+  z-index: 2;
+  /* transform: translateX(100vw); */
+  /* transition: transform 1s ease-in-out, opacity 1s; */
+}
+
+/* .mobile-nav.active {
+  visibility: visible;
+  opacity: 1;
+  fill: hsl(43, 59%, 43%);
+} */
+.mobile-nav-links ul {
+  list-style: none;
+  padding: 0;
+}
+.mobile-nav-links ul li {
+  font-size: var(--medium-font);
+  margin-top: 1em;
+}
+.mobile-nav-links ul li a {
+  text-decoration: none;
+  color: var(--dark-gray);
+
+}
+.mobile-nav-links ul li a:visited {
+  text-decoration: none;
+  color: var(--dark-gray);
+
+}
+.mobile-nav-links ul li a.current-link {
+  text-decoration: underline;
+  color: var(--dark-gray);
+
+}
+.mobile-menu-title{
+  color: transparent;
+  background: linear-gradient(225deg, 
+  hsl(var(--main-hue), var(--base-saturation), var(--base-lightness)) 30%, 
+  hsl(var(--main-hue), calc(var(--base-saturation) - 15%) , calc(var(--base-lightness) + 15%)) 40%, 
+  hsl(43, 59%, 43%));
+  font-size: var(--big-font);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+.main-container {
+  max-width: 100%;
+}
+.hero {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: aquamarine;
+}
+.hero-content {
+  display: flex;
+  flex-flow: row;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.hero-copy {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#services {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: blueviolet;
+}
+.card-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+}
+.card-content input {
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+#contact {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: green;
+}
+.info-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer {
+  position: relative;
+  width: 100%;
+}
