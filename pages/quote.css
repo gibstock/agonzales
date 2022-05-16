@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+.main-container {
+  margin-bottom: 1em;
+}
+#quote {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+article {
+  width: 90vw;
+}
+.input-group {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 1em;
+}
+.input-group input, .input-group textarea {
+  padding: 1em;
+  border: .5px solid var(--dark-gray);
+  border-radius: 12px;
+  font-size: 1.5em;
+
+
+}
+button {
+  background-color: var(--theme-3);
+  color: var(--dark-gray);
+  font-size: 20px;
+  width: 100%;
+  border: .5px solid var(--main-color);
+  border-radius: 7px;
+  padding: .75em 3em;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+}

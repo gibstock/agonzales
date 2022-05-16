@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="48x48" href="./favicon.ico">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../src/css/index.css">
+  <script src="../pages/quote.js" defer></script>
+  <title>Andre Gonzales Web Services | Quote</title>
+</head>
+<body>
+  <header>
+    <div class="cta">
+      Get a Free Consultation &rAarr; <a class="cta-link" href="/pages/quote.html">Today</a>
+    </div>
+    <nav>
+      <a href="../index.html">
+        <div class="logo">
+          <img src="../src/img/agws.png" alt="AWGS Logo">
+        </div>
+      </a>
+      <div class="desk-nav"></div>
+      <div class="mobile-nav">
+        <span class="mobile-menu-title">
+          MENU
+        </span>
+        <div class="mobile-nav-links">
+          <ul>
+            <li><a class="current-link" href="/">Home</a></li>
+            <li><a href="quote.html">Quote</a></li>
+            <!-- <li><a href="about.html">About</a></li> -->
+          </ul>
+        </div>
+      </div>
+      <svg class="menu_icon" viewBox="0 0 100 100" width="80">
+        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+        <path class="line middle" d="m 30,50 h 40"></path>
+        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+      </svg>
+    </nav>
+  </header>
+  <main>
+    <div class="main-container">
+      <section id="quote">
+        <article>
+          <h1>Get a Quote</h1>
+          <form name="getAQuote" id="getAQuote" method="POST" data-netlify="true">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="What should I call you?" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="How should I contact you?" required>
+            </div>
+            <div class="input-group">
+              <label for="message">Service Requested</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Briefly tell me how I can help you..."></textarea>
+            </div>
+            
+            <div class="form-submit">
+              <button class="submit-btn" type="submit" value="Send" >Send</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      Created by Andre Gonzales Web Services &copy; 2022
+    </div>
+  </footer>
+</body>
+</html>

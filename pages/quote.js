@@ -1,13 +1,5 @@
 const menuIcon = document.querySelector('.menu_icon')
 const mobileMenu = document.querySelector('.mobile-nav')
-const flyingTitle = document.querySelector('.flying-title')
-const cardContainer = document.querySelector('.card-container')
-const cardButton = cardContainer.querySelectorAll('input')
-const hero = document.querySelector('.hero')
-const heroButton = hero.querySelector('input')
-
-
-
 
 let xOrY = ['translateX', 'translateY']
 let plusOrMinus = [-100, 100]
@@ -20,22 +12,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
     mobileMenu.style.transform = `${xOrY[1]}(${plusOrMinus[rndPlusOrMinus]}vh)`
   }
 })
-
-if(window.location.href.includes('index.html')){
-  let roles = ['Services','Apps','Maintenance', 'Accessibility','Architect', 'Developer']
-  let count = 0
-  setInterval(()=> {
-    if(count === roles.length) count = 0
-    flyingTitle.textContent = roles[count]
-    flyingTitle.style.filter = 'blur(0)'
-    flyingTitle.style.transition = 'all 1s'
-    setTimeout(()=> {
-      flyingTitle.style.filter = 'blur(20px)'
-
-    }, 1500)
-    count++
-  }, 3000)
-}
 
 const mobileMenuOpen = () => {
   rndAxis = Math.floor(Math.random() * xOrY.length)
@@ -75,11 +51,3 @@ const mobileMenuOpen = () => {
 }
 
 menuIcon.addEventListener('click', mobileMenuOpen)
-heroButton.addEventListener('click', ()=> {
-  window.location = '#services'
-})
-cardButton.forEach((button) => {
-  button.addEventListener('click', () => {
-    window.location = '/pages/quote.html'
-  })
-})
