@@ -205,7 +205,7 @@ nav a {
   font-size: 2em;
   font-weight: bold;
   display: inline;
-  /* filter: blur(20px); */
+  filter: blur(20px);
   transition: blur 1.5s;
 }
 input[type='button'] {
