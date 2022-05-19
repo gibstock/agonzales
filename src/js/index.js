@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   }
 })
 
-if(window.location.href.includes('index.html') || window.location.href.includes('quote.html') ){
+if(window.location.href.includes('agonzales.dev') ){
   let roles = ['Services','Apps','Maintenance', 'Accessibility','Architect', 'Developer']
   let count = 0
   setInterval(()=> {
