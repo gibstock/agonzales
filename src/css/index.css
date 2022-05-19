@@ -60,6 +60,25 @@ nav a {
   align-self: center;
   justify-self: center;
 }
+.desk-firm {
+  display: none;
+}
+.mobile-firm {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+.mobile-firm a {
+  text-decoration: none;
+  color: #000;
+
+}
+.mobile-firm a:visited {
+  color: #000;
+
+}
 .menu_icon {
   z-index: 100;
   /* position: fixed;
@@ -372,6 +391,9 @@ footer {
   display: none;
 }
 @media screen and (min-width: 700px) {
+  .mobile-firm {
+    display: none;
+  }
   .mobile-nav {
     display: none;
   }
@@ -382,6 +404,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: none;
   }
   .desk-firm a {
     text-decoration: none;
@@ -420,7 +443,7 @@ footer {
   }
   nav {
     padding: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
   .hero {
     background: url(/src/img/sf-city-large.jpg) no-repeat top/cover;
