@@ -4,7 +4,7 @@ const flyingTitle = document.querySelector('.flying-title')
 const cardContainer = document.querySelector('.card-container')
 const cardButton = cardContainer.querySelectorAll('input')
 const hero = document.querySelector('.hero')
-const heroButton = hero.querySelector('input')
+const heroButton = hero.querySelector('button')
 
 
 
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   }
 })
 
-if(window.location.href.includes('index.html')){
+if(window.location.href.includes('index.html') || window.location.href.includes('quote.html') ){
   let roles = ['Services','Apps','Maintenance', 'Accessibility','Architect', 'Developer']
   let count = 0
   setInterval(()=> {
@@ -31,7 +31,6 @@ if(window.location.href.includes('index.html')){
     flyingTitle.style.transition = 'all 1s'
     setTimeout(()=> {
       flyingTitle.style.filter = 'blur(20px)'
-
     }, 1500)
     count++
   }, 3000)

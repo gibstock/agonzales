@@ -16,12 +16,21 @@
       Get a Free Consultation &rAarr; <a class="cta-link" href="/pages/quote.html">Today</a>
     </div>
     <nav>
-      <a href="../index.html">
+      <a href="/index.html">
         <div class="logo">
-          <img src="../src/img/agws.png" alt="AWGS Logo">
+          <img src="/src/img/agws.png" alt="AWGS Logo">
         </div>
       </a>
-      <div class="desk-nav"></div>
+      <div class="desk-firm">
+        <a href="/">Andre Gonzales Web Services</a>
+      </div>
+      <div class="desk-nav">
+        <ul>
+          <li><a class="current-link" href="/">Home</a></li>
+          <li><a href="/pages/quote.html">Quote</a></li>
+          <!-- <li><a href="/pages/about.html">About</a></li> -->
+        </ul>
+      </div>
       <div class="mobile-nav">
         <span class="mobile-menu-title">
           MENU
@@ -29,8 +38,8 @@
         <div class="mobile-nav-links">
           <ul>
             <li><a class="current-link" href="/">Home</a></li>
-            <li><a href="quote.html">Quote</a></li>
-            <!-- <li><a href="about.html">About</a></li> -->
+            <li><a href="/pages/quote.html">Quote</a></li>
+            <!-- <li><a href="/pages/about.html">About</a></li> -->
           </ul>
         </div>
       </div>
@@ -43,6 +52,19 @@
   </header>
   <main>
     <div class="main-container">
+      <div class="hero ">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <div class="title">
+              <h1>Web </h1>
+              <span class="flying-title">Architect</span>
+            </div>
+            <p>Let yourself come into focus</p>
+          </div>
+        </div>
+        <!-- <input type="button" value="Learn More"> -->
+        <button class="hero-button quote"><span>Quote</span></button>
+      </div>
       <section id="quote">
         <article>
           <h1>Get a Quote</h1>
@@ -57,7 +79,7 @@
             </div>
             <div class="input-group">
               <label for="message">Service Requested</label>
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Briefly tell me how I can help you..."></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Briefly tell me how I can help you..." required></textarea>
             </div>
             
             <div class="form-submit">
